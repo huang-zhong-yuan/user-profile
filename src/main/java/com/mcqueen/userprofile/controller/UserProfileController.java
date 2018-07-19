@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,11 +21,6 @@ import java.util.List;
 public class UserProfileController {  
   @Autowired
   private UserProfileService userProfileService;
-  
-  @RequestMapping("/")
-  String home() {
-    return "Hello World!";
-  }
   
   @GetMapping(value = "/v1/users/{userName}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
   public UserBo getUser(@PathVariable String userName) {
