@@ -1,8 +1,8 @@
 package com.mcqueen.userprofile.domain;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 
 @Data

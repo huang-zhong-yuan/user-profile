@@ -1,8 +1,7 @@
 package com.mcqueen.userprofile.domain;
 
 import lombok.Data;
-
-import javax.validation.constraints.NotEmpty;
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Data
 public class CompanyRegisterRequest {
